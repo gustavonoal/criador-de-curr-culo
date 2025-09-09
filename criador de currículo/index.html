@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Currículo Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Adicionar Seção</h2>
+            <button class="add-section-btn" data-section-type="personal">Informações Pessoais</button>
+            <button class="add-section-btn" data-section-type="summary">Resumo Profissional</button>
+            <button class="add-section-btn" data-section-type="education">Educação</button>
+            <button class="add-section-btn" data-section-type="experience">Experiência Profissional</button>
+            <button class="add-section-btn" data-section-type="skills">Habilidades</button>
+            <button class="add-section-btn" data-section-type="projects">Projetos</button>
+            <button class="add-section-btn" data-section-type="languages">Idiomas</button>
+            <button class="add-section-btn" data-section-type="custom">Seção Personalizada</button>
+            <hr>
+            <h2>Exportar</h2>
+            <button id="export-html-btn" class="export-btn">Download HTML</button>
+            <button id="export-pdf-btn" class="export-btn">Download PDF</button>
+        </div>
+        <div class="main-content">
+            <h1>Monte seu Currículo</h1>
+            <div id="resume-preview-area">
+                <div class="empty-message">Comece adicionando seções do menu ao lado.</div>
+            </div>
+        </div>
+    </div>
+    <div id="export-resume-template" style="display: none;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
